@@ -14,7 +14,7 @@
     }
 </script>
 
-<style> 
+<style>
     :root
     {
         --viewer_min_height: 100vh;
@@ -37,9 +37,11 @@
         
         --shadow_background: rgba(0,0,0,0.5);
 
-        --rotate-recipe: 30deg;
+        --rotate-recipe: 20deg;
         --rotate-liquid: calc(var(--rotate-recipe)*-1)
     }
+</style>
+<style scoped> 
     *
     {
         margin: 0;
@@ -75,6 +77,7 @@
         border: var( --bowl-before_border);
         border-radius: 50%;
         box-shadow: var(--bowl-before_box_shadow);
+
     }
     .bowl::after
     {
@@ -82,7 +85,8 @@
         position: absolute;
         top: 40%;
         left: 50%;
-        transform: translate(-50%,-50%);
+        transform-origin: bottom center;
+        transform: translate(-50%,-50%) rotate(var(--rotate-liquid));
         border-radius: 50%;
         width: calc(var(--bowl_width__height)/2);
         height: var(--bowl-after_height);
