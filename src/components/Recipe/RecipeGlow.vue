@@ -23,8 +23,8 @@
         --bowl_width__height: 300px; 
         --bowl_background: rgba(255,255,255,0.1);
         --bowl_border: 8px solid transparent;
-        --bowl-before_width: 50%;
-        --bowl-before_height: 60px;
+        --bowl-before_width: 40%;
+        --bowl-before_height: 30px;
         --bowl-before_top: -10px;
         --bowl-before_border: 15px solid #444;
         --bowl-before_box_shadow: 0 10px #222;
@@ -37,7 +37,7 @@
         
         --shadow_background: rgba(0,0,0,0.5);
 
-        --rotate-recipe: 20deg;
+        --rotate-recipe: 30deg;
         --rotate-liquid: calc(var(--rotate-recipe)*-1)
     }
     *
