@@ -36,6 +36,9 @@
         --liquid-after_background: #1fa4e0;
         
         --shadow_background: rgba(0,0,0,0.5);
+
+        --rotate-recipe: 20deg;
+        --rotate-liquid: calc(var(--rotate-recipe)*-1)
     }
     *
     {
@@ -58,7 +61,7 @@
         height: var(--bowl_width__height);
         background: var(--bowl_background);
         border-radius: 50%;
-        transform: rotate(20deg);
+        transform: rotate(var(--rotate-recipe));
     }
     .bowl::before
     {
@@ -94,7 +97,7 @@
         border-bottom-right-radius: var(--liquid_fill);
         filter: drop-shadow(0 0 80px var(--liquid_background));
         transform-origin: top center;
-        transform: rotate(-20deg);
+        transform: rotate(var(--rotate-liquid));
     }
     .liquid::before
     {
